@@ -1,66 +1,47 @@
+/**
+ * Created by earlybirdcamp on 6/15/16.
+ */
 package nativeshakers.com.productivity;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.firebase.client.Firebase;
 
-/**
- * Created by earlybirdcamp on 6/14/16.
- */
 public class User {
-    String name;
-    String firstName;
-    String lastName;
-    String id;
-    String email;
-    String password;
-    List<String> friends;
-    List<String> tasks;
+    private String id;
+    private String name;
+    private String email;
+    private String password;
 
     public User() {
-        this.id = "Not Set";
-        this.email = "Not Set";
-        this.name = "Not Set";
-        this.firstName = "Not Set";
-        this.lastName = "Not Set";
-        this.password = "Not Set";
-        this.friends = new ArrayList<String>();
-        this.tasks = new ArrayList<String>();
-
     }
 
-    public User(String email, String name, String password) {
-        this.email = email;
-        this.name = name;
-        this.firstName = "Not Set";
-        this.lastName = "Not Set";
-        this.password = password;
-        this.friends = new ArrayList<String>();
-        this.tasks = new ArrayList<String>();
-
+    public String getId() {
+        return id;
     }
-
-    public void addFriends(String email){
-        this.friends.add(email);
+    public void setId(String id) {
+        this.id = id;
     }
-    public void addTasks(Task task){
-        this.friends.add(email);
-    }
-
-    public void printPerson() {
-        System.out.println(name);
-    }
-
-    public List<String> getFriends() {
-        return friends;
-    }
-
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public String getEmail(){
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getEmail() {
         return email;
     }
+    public void setEmail(String email) {
+        this.email = email;
+    }
+    public String getPassword() {
+        return password;
+    }
 
-
-
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    public void saveUser() {
+        Firebase myFirebaseRef = new Firebase("https://nsproductivity.firebaseio.com/");
+        myFirebaseRef = myFirebaseRef.child("users").child(getId());
+        myFirebaseRef.setValue(this);
+    }
 }
