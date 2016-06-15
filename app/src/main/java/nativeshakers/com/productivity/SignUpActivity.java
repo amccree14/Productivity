@@ -3,13 +3,19 @@
  */
 package nativeshakers.com.productivity;
 
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+
+import java.util.Map;
 
 public class SignUpActivity extends AppCompatActivity{
     private Firebase myFirebaseRef;
@@ -44,6 +50,38 @@ public class SignUpActivity extends AppCompatActivity{
         user.setName(name.getText().toString());
         user.setEmail(email.getText().toString());
         user.setPassword(password.getText().toString());
+    }
+
+    public void onSignUpClicked(View view) {
+        progressBar.setVisibility(View.VISIBLE);
+        setUpUser();
+        //createUser method creates a new user account with the given email and password.
+        //Parameters are:
+        //email - The email for the account to be created
+        //password - The password for the account to be created
+        //handler - A handler which is called with the result of the operation
+        myFirebaseRef.createUser(
+                user.getEmail(),
+                user.getPassword(),
+                new Firebase.ValueResultHandler<Map<String, Object>>() {
+                    @Override
+                    public void onSuccess(Map<String, Object> stringObjectMap) {
+                        user.setId(stringObjectMap.get("uid").toString());
+                        user.saveUser();
+                        myFirebaseRef.unauth();
+                        Toast.makeText(getApplicationContext(), "Your Account has been Created", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Please Login with your Email and Password", Toast.LENGTH_LONG).show();
+                        progressBar.setVisibility(View.GONE);
+                        finish();
+                    }
+
+                    @Override
+                    public void onError(FirebaseError firebaseError) {
+                        Toast.makeText(getApplicationContext(), "" + firebaseError.getMessage(), Toast.LENGTH_LONG).show();
+                        progressBar.setVisibility(View.GONE);
+                    }
+                }
+        );
 
     }
 
