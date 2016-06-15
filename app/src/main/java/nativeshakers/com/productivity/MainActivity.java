@@ -30,6 +30,6 @@ public class MainActivity extends AppCompatActivity {
         mcreateAccount = (Button)findViewById(R.id.createAccount);
         mlogin = (Button)findViewById(R.id.login);
         mdemo = (Button)findViewById(R.id.demo);
-        mRef = new Firebase("https://nativeshakers.com.productivity.firebaseio.com/appName");
+        mRef = new Firebase("https://nsproductivity.firebaseio.com/appName");
     }
 }
