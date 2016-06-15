@@ -12,20 +12,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="App Name"
-        android:id="@+id/textViewAppName"
-        android:layout_marginTop="100dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Welcome Message"
-        android:id="@+id/textViewWelcome"
-        android:layout_below="@+id/textViewAppName"
+        android:id="@+id/welcomeMessage"
+        android:layout_below="@+id/appName"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="49dp" />
 
@@ -35,7 +25,7 @@
         android:layout_height="wrap_content"
         android:text="Create Account"
         android:id="@+id/createAccount"
-        android:layout_below="@+id/textViewWelcome"
+        android:layout_below="@+id/welcomeMessage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="88dp" />
 
@@ -56,5 +46,15 @@
         android:id="@+id/demo"
         android:layout_below="@+id/login"
         android:layout_alignStart="@+id/login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="App Name"
+        android:id="@+id/appName"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "594148396683",
+    "firebase_url": "https://productivity-387ad.firebaseio.com",
+    "project_id": "productivity-387ad",
+    "storage_bucket": "productivity-387ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:594148396683:android:39ead69e1f9a1bda",
+        "android_client_info": {
+          "package_name": "nativeshakers.com.productivity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "594148396683-la3r17shq09ptr408rqod6vnp9kdcsn4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmMpeYTt2lUKKtGbmZBJMyklsclCqzazo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
