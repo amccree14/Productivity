@@ -1,5 +1,7 @@
 package nativeshakers.com.productivity;
 
+import com.firebase.client.Firebase;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +16,7 @@ public class User {
     String email;
     String password;
     List<String> friends;
-    List<String> tasks;
+    List<Task> tasks;
 
     public User() {
         this.id = "Not Set";
@@ -24,8 +26,7 @@ public class User {
         this.lastName = "Not Set";
         this.password = "Not Set";
         this.friends = new ArrayList<String>();
-        this.tasks = new ArrayList<String>();
-
+        this.tasks = new ArrayList<Task>();
     }
 
     public User(String id, String email, String name, String password) {
@@ -36,15 +37,46 @@ public class User {
         this.lastName = "Not Set";
         this.password = password;
         this.friends = new ArrayList<String>();
-        this.tasks = new ArrayList<String>();
+        this.tasks = new ArrayList<Task>();
 
     }
 
-    public void addFriends(String email){
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void saveUser() {
+        Firebase myFirebaseRef = new Firebase("https://nsproductivity.firebaseio.com/");
+        myFirebaseRef = myFirebaseRef.child("users").child(getId());
+        myFirebaseRef.setValue(this);
+    }
+
+    public void addFriends(String email) {
         this.friends.add(email);
     }
-    public void addTasks(Task task){
-        this.friends.add(email);
+
+    public void addTask(Task task) {
+        this.tasks.add(task);
     }
 
     public void printPerson() {
@@ -55,13 +87,29 @@ public class User {
         return friends;
     }
 
-    public String getName(){
+    public List<Task> getTasks() {
+        return tasks;
+    }
+
+    public String getName() {
         return name;
     }
-    public String getEmail(){
+
+    public String getEmail() {
         return email;
     }
 
+    public String tasksToString(){
+        String tasks = "";
+        for(int i=0; i<this.tasks.size(); i++){
+            tasks += this.tasks.get(i).getTitle() + " ";
+        }
+        return tasks;
+    }
 
+    public String toString(){
+        return "id is: " + this.id + ",name is: " + this.name + ",email is: "
+                + this.email + ",tasks are: " + this.tasksToString();
+    }
 
 }
