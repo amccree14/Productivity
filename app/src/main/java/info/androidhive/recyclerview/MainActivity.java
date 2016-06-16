@@ -1,6 +1,7 @@
 package info.androidhive.recyclerview;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -8,6 +9,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.GestureDetector;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
@@ -48,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
+
             @Override
             public void onLongClick(View view, int position) {
 
@@ -55,6 +60,29 @@ public class MainActivity extends AppCompatActivity {
         }));
 
         dummyTaskData();
+
+
+    }
+////////////////// Plus Button Inflation /////////////////
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+    ///////////////////////////////////////////////
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.menu_plus_button:
+                Intent i = new Intent(MainActivity.this, TaskDetails.class);
+                startActivity(i);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     private void dummyTaskData() {
