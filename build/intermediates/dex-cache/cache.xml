@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0-beta1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3c0208faf42864e6695345e64d1b955070263819">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0-beta1_1fe21c8fffbe793074adcdae914b59292960f16a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_d2c8a705860230ccf0fbce842b5edf734cdbbfe4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.3.1/be29b24233711c419ce935aa0a1b12ebc49d1c9a/firebase-client-android-2.3.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/firebase-client-android-2.3.1_eefdc0ff62e16c3b22961b7048f987507e21ee12/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f4cf90d130051346563441939087e81a65d54204">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_daade59cd43610717b0a5f6a2c72d7f47189f07d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-beta1/jars/libs/internal_impl-24.0.0-beta1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23d564c059873f398dc5d967f56791a66472ce76">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0-beta1_450a5e0f5bdbea14334b4717e70b8217a94881ad/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.3.1/4d53b7d6983247af02b8fe7e4228fff555a5e828/firebase-client-jvm-2.3.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/firebase-client-jvm-2.3.1_3a67f6ed54449ef3ddd70e7915a33cda06441ca1/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-beta1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="97f82fd0c185bd2881a93646954f2429be4baa86">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0-beta1_53f7d764d7836db7184d5b2eed283994b93b5c4d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-beta1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f81eecb8d5e9e548f75f277830a94a9b37fbb987">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0-beta1_45d1bc11f6f816e66bbe615f601ff608287ff629/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.2.2_0b585c48205d59b70d43b8c21211c2d9df474597/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.1.0_4fea9b8ca8b174e4db9ff581044dbecf9514cdbc/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-annotations-2.2.2_47033dc7b0b691b737b7b4e065a391cccfbb6a86/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bc208da240d3fc2710417e3652649f1bfbdf5e33">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7dbc9f5b2103f38a107dae8e999fd3a681284496/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0-beta1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8d3137a71200c47974c0454ae8ad272a09c533eb">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0-beta1_1eb07daeb2e35a9095076c750ed85d03d5bebbbd/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.3.0_44abb017831ec54bc011df5ad4f73890720ed3fc/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0-beta1/support-annotations-24.0.0-beta1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="04705c19cdec60364bc04e2e928c274da1ba301b">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0-beta1_b5bf4ec1c3cc75de7795041db455f644e4414474/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.roughike/bottom-bar/1.3.9/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f74bf45cb3b2a686ca6d17feadbda6868e43e6c1">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.roughike-bottom-bar-1.3.9_47aa0f3c667d5f12f8e4d57034a3dba56bd84258/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.11/d37cb67277928cf59344b4196af8d9cee1f1a27c/tubesock-0.0.11.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/tubesock-0.0.11_0b35b549de031e4faddc9dd55ba6c56148df19c4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.3.0_d479514fdbfc2319d238d70f7f606256c0c670fa/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="/Users/earlybirdcamp/AndroidStudioProjects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-databind-2.2.2_af0e377c6feede0ff9423f2a94f727e0e573417f/classes.dex" />
+    </item>
+
+</items>
