@@ -13,6 +13,16 @@
         android:theme="@style/AppTheme" >
 
         <activity android:name=".LeaderboardActivity" >
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,15 +30,15 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".searchForFriends"
-            android:label="@string/title_activity_main" >
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
+        <!--<activity-->
+            <!--android:name=".searchForFriends"-->
+            <!--android:label="@string/title_activity_main" >-->
+            <!--&lt;!&ndash;<intent-filter>&ndash;&gt;-->
+                <!--&lt;!&ndash;<action android:name="android.intent.action.MAIN" />&ndash;&gt;-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
+                <!--&lt;!&ndash;<category android:name="android.intent.category.LAUNCHER" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</intent-filter>&ndash;&gt;-->
+        <!--</activity>-->
 
     </application>
 

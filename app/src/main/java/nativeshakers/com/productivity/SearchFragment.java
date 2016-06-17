@@ -1,17 +1,22 @@
 package nativeshakers.com.productivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
+import android.util.Log;
+import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 import java.util.ArrayList;
@@ -19,9 +24,68 @@ import java.util.List;
 
 public class SearchFragment extends Fragment implements SearchView.OnQueryTextListener {
 
+    public static interface ClickListener {
+        public void onClick(View view, int position);
+
+        public void onLongClick(View view, int position);
+    }
+
+    class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
+
+        private ClickListener clicklistener;
+        private GestureDetector gestureDetector;
+
+        public RecyclerTouchListener(Context context, final RecyclerView recycleView, final List<String> data, final ClickListener clicklistener) {
+
+            this.clicklistener = clicklistener;
+            gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    View child = recycleView.findChildViewUnder(e.getX(), e.getY());
+                    if (child != null && clicklistener != null) {
+                        clicklistener.onLongClick(child, recycleView.getChildAdapterPosition(child));
+                    }
+                }
+            });
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+            View child = rv.findChildViewUnder(e.getX(), e.getY());
+            if (child != null && clicklistener != null && gestureDetector.onTouchEvent(e)) {
+                clicklistener.onClick(child, rv.getChildAdapterPosition(child));
+            }
+
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+        }
+    }
+
+
+    String TAG = "SEARCH FRAGMENT";
+
     public static SearchFragment newInstance() {
         return new SearchFragment();
     }
+
+    private final ArrayList<String> users = CreateFakeData.createFakeFriendsFunction();
+
+    private final String[] USERS = users.toArray(new String[users.size()]);
+    ;
 
     private static final String[] MOVIES = new String[]{
             "The Woman in Black: Angel of Death",
@@ -80,13 +144,14 @@ public class SearchFragment extends Fragment implements SearchView.OnQueryTextLi
 
     private RecyclerView mRecyclerView;
     private SearchAdapter mAdapter;
-    private List<SearchAdapter> mModels;
+    private List<SearchModel> mModels;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        final View view = inflater.inflate(R.layout.fragment_main, container, false);
+        Log.d(TAG, "in onCreateView");
+        final View view = inflater.inflate(R.layout.fragment_search, container, false); //search_item is fragment_main
 
-        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView); // like RecyclerVew in fragment_main
 
         return view;
     }
@@ -95,22 +160,51 @@ public class SearchFragment extends Fragment implements SearchView.OnQueryTextLi
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         setHasOptionsMenu(true);
+        Log.d(TAG, "in onViewCreated");
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
         mModels = new ArrayList<>();
 
-        for (String movie : MOVIES) {
-            mModels.add(new SearchModel(movie));
+        for (String user : USERS) {
+            mModels.add(new SearchModel(user));
         }
 
-        mAdapter = new SearchModel(getActivity(), mModels);
+        mAdapter = new SearchAdapter(getActivity(), mModels);
         mRecyclerView.setAdapter(mAdapter);
+
+        mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity().getApplicationContext(),
+                mRecyclerView, users, new ClickListener() {
+
+            @Override
+            public void onClick(View view, final int position) {
+
+                //Values are passing to activity & to fragment as well
+                final String user = users.get(position);
+
+                Toast.makeText(getActivity().getApplicationContext(), "User is: " + user,
+                        Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getActivity().getApplicationContext(), "BLAH",Toast.LENGTH_SHORT).show();
+                Log.d("SEARCH FRAGMENT CLASS", user + "was clicked");
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+                final String user = users.get(position);
+
+                Log.d("SEARCH FRAGMENT CLASS", user + "was clicked");
+
+                Toast.makeText(getActivity().getApplicationContext(), "Long press on position :" + position,
+                        Toast.LENGTH_LONG).show();
+            }
+        }));
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.menu, menu);
+        Log.d(TAG, "in onCreateOptionsMenu");
+
+        inflater.inflate(R.menu.menu_main, menu);
 
         final MenuItem item = menu.findItem(R.id.action_search);
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
@@ -119,6 +213,8 @@ public class SearchFragment extends Fragment implements SearchView.OnQueryTextLi
 
     @Override
     public boolean onQueryTextChange(String query) {
+        Log.d(TAG, "in onQueryTextChange");
+
         final List<SearchModel> filteredModelList = filter(mModels, query);
         mAdapter.animateTo(filteredModelList);
         mRecyclerView.scrollToPosition(0);

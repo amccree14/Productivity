@@ -10,10 +10,10 @@ import java.util.UUID;
  * Created by earlybirdcamp on 6/16/16.
  */
 
-public class createFakeData extends User {
-    ArrayList<String> peopleNames = new ArrayList<String>();
+public class CreateFakeData extends User {
+    static ArrayList<String> peopleNames = new ArrayList<String>();
 
-    public ArrayList<String> createFakeFriendsFunction() {
+    public static ArrayList<String> createFakeFriendsFunction() {
         peopleNames.add("Andrew McCree");
         peopleNames.add("Anna Goncharova");
         peopleNames.add("Christina Le");
