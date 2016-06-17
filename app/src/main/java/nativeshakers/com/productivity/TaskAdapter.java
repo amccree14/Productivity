@@ -40,6 +40,10 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.MyViewHolder> 
         return new MyViewHolder(itemView);
     }
 
+    public Task getItem(int position) {
+        return tasksList.get(position);
+    };
+
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Task movie = tasksList.get(position);

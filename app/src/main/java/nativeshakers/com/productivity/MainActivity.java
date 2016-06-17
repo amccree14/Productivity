@@ -15,7 +15,10 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
+
                 Task task = taskList.get(position);
                 Toast.makeText(getApplicationContext(), task.getTitle() + " is finished!", Toast.LENGTH_SHORT).show();
                 taskList.remove(task);
@@ -58,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onLongClick(View view, int position) {
-            }
 
+            }
         }));
 
         dummyTaskData();
