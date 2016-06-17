@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.1.1_049636536b3026ca1857dfac30e06d499cd6450e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.0.0_d3babb51b42fb9c94733763d11335ec602c46421/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.1.1_691bae26ffe1f8038b64c01b5886b113e0c004c0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.0_3fd1ae5e114e49e2b6bd22bb24b59250d5179b87/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.0.0_fc066421864b9e4401ca4d758b0bfa44e5e7d696/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.0.0_bbb4cafb84a18e301edb712bdcb674b01c685232/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_337452c9c736e7c117a52639202caa8a44ab3d72/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.0.0_2f770ca781072c6401db0257b3afc4ac398765bb/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.5.2/f19f10d6276aa0b380e2d05d2ab3272d693a5433/firebase-client-android-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f19f10d6276aa0b380e2d05d2ab3272d693a5433">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/firebase-client-android-2.5.2_7056a35e7630f144ea74b4cbb664d38c240391f4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.5.2/91731b8f5868a3e8a8a773f29b8d06b5c358f5bb/firebase-client-jvm-2.5.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="91731b8f5868a3e8a8a773f29b8d06b5c358f5bb">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/firebase-client-jvm-2.5.2_1bff5b3f4186faccf8dcd7b47c801492500d9910/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6f78c0cd592f32abb06c3fbf4e91ed5c56801578">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_55b5e34ba2ebf5e271b53fe4e56b37f090d8afd0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.1.1_7cb9243686631d6092156f9d6d849053be10243c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.12/6ec0bbd3e161a73ed672284b587fd32309a86d7a/tubesock-0.0.12.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6ec0bbd3e161a73ed672284b587fd32309a86d7a">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/tubesock-0.0.12_3df16f72b535f004f49f40819150dcfd04e5af7f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-annotations-2.2.2_47033dc7b0b691b737b7b4e065a391cccfbb6a86/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-databind-2.2.2_af0e377c6feede0ff9423f2a94f727e0e573417f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.0_0c9279203c03411effcb7cd18ed0769449e6abc7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.1_16c0bef93a79e4715b49599c534adadf22aeb16a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.0.0_da8b2a451c0e174f0d2382c1f26937e0ce615207/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.1.1_9d0766ddd2af001138417b05b67be7b99d3e27d8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.2.2_0b585c48205d59b70d43b8c21211c2d9df474597/classes.dex" />
+    </item>
+    <item
+        jar="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f1fd26156db1c070127283c56d27255c33b01e7b">
+        <dex dex="/Users/earlybirdcamp/Desktop/Kamoya-part/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_67374031fde2874d4c3aa27c132e73885e6c3291/classes.dex" />
+    </item>
+
+</items>
