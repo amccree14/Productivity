@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    public List<Task> taskList = new ArrayList<>();
+    public List<Task> reminders= new ArrayList<>();
     public RecyclerView recyclerView;
     public TaskAdapter tAdapter;
 
@@ -54,15 +54,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view, int position) {
 
-//                Task task = reminders.get(position);
-//                Toast.makeText(getApplicationContext(), task.getTitle() + " is finished!", Toast.LENGTH_SHORT).show();
-//                reminders.remove(task);
-//                tAdapter.notifyDataSetChanged();
+                TaskContainer reminderContainer = TaskContainer.get(getApplicationContext());
+                List<Task> reminders = reminderContainer.getReminders();
 
-                Task task = taskList.get(position);
+                Task task = reminders.get(position);
                 Toast.makeText(getApplicationContext(), task.getTitle() + " is finished!", Toast.LENGTH_SHORT).show();
-                taskList.remove(task);
+                reminders.remove(task);
                 tAdapter.notifyDataSetChanged();
+
+//                Task task = taskList.get(position);
+//                Toast.makeText(getApplicationContext(), task.getTitle() + " is finished!", Toast.LENGTH_SHORT).show();
+//                taskList.remove(task);
+//                tAdapter.notifyDataSetChanged();
 
             }
 

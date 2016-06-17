@@ -43,7 +43,7 @@ public class TaskDetails extends AppCompatActivity {
         task.setCategory(categories.getSelectedItem().toString());
 
         String time = new String();
-        time = "" + timePicker.getCurrentHour() + "" + timePicker.getCurrentMinute();
+        time = "" + timePicker.getCurrentHour() + ":" + timePicker.getCurrentMinute();
         task.setTime(time);
 
         task.setTitle(title.getText().toString());
