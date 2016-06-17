@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 <<<<<<< HEAD
+<<<<<<< HEAD
     package="nativeshakers.com.productivity" >
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -9,6 +10,9 @@
         android:name=".Productivity"
 =======
     package="info.androidhive.recyclerview" >
+=======
+    package="info.androidhive.recyclerview">
+>>>>>>> origin/andrew
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -47,6 +51,7 @@
             </intent-filter>
         </activity>
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         <!--<activity-->
             <!--android:name=".searchForFriends"-->
@@ -62,6 +67,17 @@
 
 </manifest>
 =======
+=======
+
+        <activity
+            android:name=".TaskDetails"
+            android:label="@string/add_task"
+            android:theme="@style/AppTheme.NoActionBar">
+            </activity>
+
+
+
+>>>>>>> origin/andrew
     </application>
 
 </manifest>

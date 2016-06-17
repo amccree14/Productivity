@@ -26,6 +26,8 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.MyViewHolder> 
 
     public TaskAdapter(List<Task> tasksList) {
         this.tasksList = tasksList;
+
+
     }
 
     @Override

@@ -1,6 +1,7 @@
 package info.androidhive.recyclerview;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -8,6 +9,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.GestureDetector;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
@@ -16,9 +20,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private List<Task> taskList = new ArrayList<>();
-    private RecyclerView recyclerView;
-    private TaskAdapter tAdapter;
+    public List<Task> taskList = new ArrayList<>();
+    public RecyclerView recyclerView;
+    public TaskAdapter tAdapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +34,14 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        tAdapter = new TaskAdapter(taskList);
+//        tAdapter = new TaskAdapter(taskList);
+
+
+            TaskContainer reminderContainer = TaskContainer.get(this);
+            List<Task> reminders = reminderContainer.getReminders();
+            tAdapter = new TaskAdapter(reminders);
+            recyclerView.setAdapter(tAdapter);
+
 
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
@@ -41,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
+
+//                Task task = reminders.get(position);
+//                Toast.makeText(getApplicationContext(), task.getTitle() + " is finished!", Toast.LENGTH_SHORT).show();
+//                reminders.remove(task);
+//                tAdapter.notifyDataSetChanged();
+
                 Task task = taskList.get(position);
                 Toast.makeText(getApplicationContext(), task.getTitle() + " is finished!", Toast.LENGTH_SHORT).show();
                 taskList.remove(task);
@@ -48,54 +66,66 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
+
             @Override
             public void onLongClick(View view, int position) {
 
             }
         }));
 
-        dummyTaskData();
+//        dummyTaskData();
+
+
+    }
+////////////////// Plus Button Inflation /////////////////
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+    }
+    ///////////////////////////////////////////////
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.menu_plus_button:
+                Intent i = new Intent(MainActivity.this, TaskDetails.class);
+                startActivity(i);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
-    private void dummyTaskData() {
-        Task task = new Task("Finish Vector Calc HW", "Homework", "7:00 P.M.");
-        taskList.add(task);
+//    private void dummyTaskData() {
+//        Task task = new Task("Finish Vector Calc HW", "Homework", "7:00 P.M.");
+//        taskList.add(task);
+//
+//        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
+//        taskList.add(task);
+//
+//        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
+//        taskList.add(task);
+//
+//        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
+//        taskList.add(task);
+//
+//        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
+//        taskList.add(task);
+//
+//
+//
+//        tAdapter.notifyDataSetChanged();
+//    }
 
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-
+    @Override
+    protected void onResume() {
+        super.onResume();
         tAdapter.notifyDataSetChanged();
+
+
     }
 
     public interface ClickListener {

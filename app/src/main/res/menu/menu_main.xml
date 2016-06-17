@@ -16,5 +16,12 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_plus_button"
+        android:icon="@drawable/ic_action_name"
+        android:title="@string/menu_item_plus"
+        app:showAsAction="ifRoom"
+        />
 </menu>
 >>>>>>> origin/andrew

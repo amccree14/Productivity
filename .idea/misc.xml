@@ -69,12 +69,15 @@
     <option name="id" value="Android" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="masterDetails">
     <states>
 =======
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
+=======
+>>>>>>> origin/andrew
   <component name="masterDetails">
     <states>
       <state key="ProjectJDKs.UI">
