@@ -20,9 +20,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private List<Task> taskList = new ArrayList<>();
-    private RecyclerView recyclerView;
-    private TaskAdapter tAdapter;
+    public List<Task> taskList = new ArrayList<>();
+    public RecyclerView recyclerView;
+    public TaskAdapter tAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,14 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
-        tAdapter = new TaskAdapter(taskList);
+//        tAdapter = new TaskAdapter(taskList);
+
+
+            TaskContainer reminderContainer = TaskContainer.get(this);
+            List<Task> reminders = reminderContainer.getReminders();
+            tAdapter = new TaskAdapter(reminders);
+            recyclerView.setAdapter(tAdapter);
+
 
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
@@ -101,29 +108,18 @@ public class MainActivity extends AppCompatActivity {
         task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
         taskList.add(task);
 
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
 
 
         tAdapter.notifyDataSetChanged();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        tAdapter.notifyDataSetChanged();
+
+        String category = getIntent().getStringExtra("category");
+
     }
 
     public interface ClickListener {

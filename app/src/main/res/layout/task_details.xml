@@ -21,26 +21,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"/>
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/country_arrays"
-        android:prompt="@string/country_prompt" />
+        android:prompt="@string/country_prompt"
+        android:layout_margin="10dp"/>
 
     <TimePicker
         android:id="@+id/timePicker1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:scaleY="0.90"
+        android:scaleX="0.90"/>
 
 
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Submit" />
+        android:text="Add Task!"
+        android:layout_gravity="center"/>
 
 
 
