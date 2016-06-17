@@ -33,7 +33,7 @@
         jar="/Users/earlybirdcamp/Projects/Productivity/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="c7dad5ae95c8d4227843d634db52bba8042116c0">
+        sha1="78f420c63512f731653fd44ccdca3195615cfbc2">
         <dex dex="/Users/earlybirdcamp/Projects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_df097e152ab003c05c6622d02e4dac1341c00470/classes.dex" />
     </item>
     <item
@@ -131,7 +131,7 @@
         jar="/Users/earlybirdcamp/Projects/Productivity/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="1622fb224714f0fb5613150fe9161b162fa24207">
+        sha1="927794a3f0b62902ef7696cd68d71d604e6df84b">
         <dex dex="/Users/earlybirdcamp/Projects/Productivity/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e456acacbadb5d96f08265ca1449c162a93f04c1/classes.dex" />
     </item>
     <item

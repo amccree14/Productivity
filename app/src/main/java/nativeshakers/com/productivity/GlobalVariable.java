@@ -18,9 +18,5 @@ public class GlobalVariable extends Application
         myState = s;
     }//End method
 
-    public void setState(List<Object>  s)
-    {
-        myState = s;
-    }//End method
 
 }//End Class

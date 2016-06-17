@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.Collections;
@@ -23,6 +24,7 @@ public class LeaderboardAdapter extends RecyclerView.Adapter<LeaderboardAdapter.
 
         this.usersList = usersList;
     }
+
 
     @Override
     public int getItemCount() {
@@ -55,6 +57,7 @@ public class LeaderboardAdapter extends RecyclerView.Adapter<LeaderboardAdapter.
 
         return new LeaderboardViewHolder(itemView);
     }
+
 
     public static class LeaderboardViewHolder extends RecyclerView.ViewHolder {
 

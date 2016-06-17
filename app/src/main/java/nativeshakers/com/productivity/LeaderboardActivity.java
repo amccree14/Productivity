@@ -1,6 +1,7 @@
 package nativeshakers.com.productivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -9,6 +10,7 @@ import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import java.sql.Time;
@@ -20,6 +22,19 @@ import java.util.UUID;
 
 
 public class LeaderboardActivity extends AppCompatActivity {
+
+    private View.OnClickListener switchToSearchActivity = new View.OnClickListener() {
+
+        public void onClick(View v) {
+            Log.d(TAG, "Cancel button was clicked!");
+            // do something when the button is clicked
+            Button b = (Button) v;
+            String buttonText = b.getText().toString();
+            Intent i = new Intent(LeaderboardActivity.this, SearchActivity.class);
+            startActivityForResult(i, RESULT_OK);
+
+        }
+    };
 
     public static interface ClickListener {
         public void onClick(View view, int position);
@@ -164,6 +179,9 @@ public class LeaderboardActivity extends AppCompatActivity {
         // use a linear layout manager
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
+
+        Button calculate = (Button)findViewById(R.id.searchActivity);
+        calculate.setOnClickListener(switchToSearchActivity);
 
         // create an array of users to be passed into the adapter
         // and populate it with fake users
