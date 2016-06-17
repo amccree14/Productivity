@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     public RecyclerView recyclerView;
     public TaskAdapter tAdapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,6 +53,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerView, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
+
+//                Task task = reminders.get(position);
+//                Toast.makeText(getApplicationContext(), task.getTitle() + " is finished!", Toast.LENGTH_SHORT).show();
+//                reminders.remove(task);
+//                tAdapter.notifyDataSetChanged();
+
                 Task task = taskList.get(position);
                 Toast.makeText(getApplicationContext(), task.getTitle() + " is finished!", Toast.LENGTH_SHORT).show();
                 taskList.remove(task);
@@ -66,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }));
 
-        dummyTaskData();
+//        dummyTaskData();
 
 
     }
@@ -92,33 +99,32 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void dummyTaskData() {
-        Task task = new Task("Finish Vector Calc HW", "Homework", "7:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
-        taskList.add(task);
-
-
-
-        tAdapter.notifyDataSetChanged();
-    }
+//    private void dummyTaskData() {
+//        Task task = new Task("Finish Vector Calc HW", "Homework", "7:00 P.M.");
+//        taskList.add(task);
+//
+//        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
+//        taskList.add(task);
+//
+//        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
+//        taskList.add(task);
+//
+//        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
+//        taskList.add(task);
+//
+//        task = new Task("Clean up dog shit", "Housework", "5:00 P.M.");
+//        taskList.add(task);
+//
+//
+//
+//        tAdapter.notifyDataSetChanged();
+//    }
 
     @Override
     protected void onResume() {
         super.onResume();
         tAdapter.notifyDataSetChanged();
 
-        String category = getIntent().getStringExtra("category");
 
     }
 
