@@ -14,6 +14,7 @@ public class User {
     String lastName;
     String id;
     String email;
+    Integer score;
     String password;
     List<String> friends;
     List<Task> tasks;
@@ -25,9 +26,11 @@ public class User {
         this.firstName = "Not Set";
         this.lastName = "Not Set";
         this.password = "Not Set";
+        this.score = 0;
         this.friends = new ArrayList<String>();
         this.tasks = new ArrayList<Task>();
     }
+
 
     public User(String id, String email, String name, String password) {
         this.id = id;
@@ -40,6 +43,15 @@ public class User {
         this.tasks = new ArrayList<Task>();
 
     }
+
+    public void setScore(int score){
+        this.score = score;
+    }
+
+    public Integer getScore() {
+        return score;
+    }
+
 
     public String getId() {
         return id;
