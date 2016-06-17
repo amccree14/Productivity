@@ -2,11 +2,19 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
+<<<<<<< HEAD
     buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "nativeshakers.com.productivity"
         minSdkVersion 18
+=======
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "info.androidhive.recyclerview"
+        minSdkVersion 15
+>>>>>>> origin/andrew
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -16,17 +24,25 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+<<<<<<< HEAD
     }
     packagingOptions {
         exclude 'META-INF/LICENSE'
         exclude 'META-INF/LICENSE-FIREBASE.txt'
         exclude 'META-INF/NOTICE'
+=======
+
+        debug {
+            debuggable true;
+        }
+>>>>>>> origin/andrew
     }
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+<<<<<<< HEAD
 
 
 
@@ -38,3 +54,9 @@ dependencies {
 }
 
 apply plugin: 'com.google.gms.google-services'
+=======
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+}
+>>>>>>> origin/andrew
