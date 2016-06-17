@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Productivity.iml" filepath="$PROJECT_DIR$/Productivity.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/ProductivityApp(Andrew).iml" filepath="$PROJECT_DIR$/ProductivityApp(Andrew).iml" />
->>>>>>> origin/andrew
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
