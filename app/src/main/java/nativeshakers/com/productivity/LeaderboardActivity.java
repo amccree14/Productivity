@@ -26,7 +26,7 @@ public class LeaderboardActivity extends AppCompatActivity {
 
         public void onLongClick(View view, int position);
     }
-
+    static String[] taskCategoryChoices = {"SCHOOLWORK", "HOUSEWORK", "PERSONAL", "OTHER"};
 
     class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
 
@@ -103,7 +103,6 @@ public class LeaderboardActivity extends AppCompatActivity {
      */
     public List<User> makeFakeUsers(List<User> usersList) {
 
-        String[] taskCategoryChoices = {"SCHOOLWORK", "HOUSEWORK", "PERSONAL", "OTHER"};
 
         for (int i = 0; i < 5; i++) {
             String uuid = UUID.randomUUID().toString().substring(0, 5);
