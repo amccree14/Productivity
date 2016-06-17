@@ -11,4 +11,8 @@ public class CustomApplication extends android.app.Application {
         super.onCreate();
         Firebase.setAndroidContext(this);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master

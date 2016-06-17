@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 .DS_Store
+<<<<<<< HEAD
 =======
 *.iml
 .gradle
@@ -10,3 +11,6 @@
 /build
 /captures
 >>>>>>> origin/andrew
+=======
+/.idea/*
+>>>>>>> master

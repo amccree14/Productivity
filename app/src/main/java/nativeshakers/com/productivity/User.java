@@ -1,14 +1,14 @@
+/**
+ * Created by earlybirdcamp on 6/15/16.
+ */
 package nativeshakers.com.productivity;
 
 import com.firebase.client.Firebase;
 
 import java.util.ArrayList;
-import java.util.List;
 
-/**
- * Created by earlybirdcamp on 6/14/16.
- */
 public class User {
+<<<<<<< HEAD
     String name;
     String firstName;
     String lastName;
@@ -93,12 +93,47 @@ public class User {
 
     public void printPerson() {
         System.out.println(name);
+=======
+    private String id;
+    private String name;
+    private String email;
+    private String password;
+
+    private ArrayList<Task> newTasks;
+    //private String Tasks;
+
+    public User() {
+        newTasks = new ArrayList<Task>();
+        Task task1 = new Task("task 1", "blah", "now");
+        Task task2 = new Task("task 2", "blah", "now");
+        Task task3 = new Task("task 3", "blah", "now");
+        newTasks.add(task1);
+        newTasks.add(task2);
+        newTasks.add(task3);
+
     }
 
-    public List<String> getFriends() {
-        return friends;
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) {
+        this.id = id;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getEmail() {
+        return email;
+>>>>>>> master
+    }
+    public void setEmail(String email) {
+        this.email = email;
     }
 
+<<<<<<< HEAD
     public List<Task> getTasks() {
         return tasks;
     }
@@ -109,6 +144,13 @@ public class User {
 
     public String getEmail() {
         return email;
+=======
+    public ArrayList<Task> getNewTasks() {
+        return newTasks;
+    }
+    public void setNewTasks(ArrayList<Task> newTasks) {
+        this.newTasks = newTasks;
+>>>>>>> master
     }
 
     public String tasksToString(){
@@ -119,9 +161,23 @@ public class User {
         return tasks;
     }
 
+<<<<<<< HEAD
     public String toString(){
         return "id is: " + this.id + ",name is: " + this.name + ",email is: "
                 + this.email + ",tasks are: " + this.tasksToString();
+=======
+    public String getPassword() {
+        return password;
     }
 
+    public void setPassword(String password) {
+        this.password = password;
+>>>>>>> master
+    }
+
+    public void saveUser() {
+        Firebase myFirebaseRef = new Firebase("https://nsproductivity.firebaseio.com/");
+        myFirebaseRef = myFirebaseRef.child("users").child(getId());
+        myFirebaseRef.setValue(this);
+    }
 }

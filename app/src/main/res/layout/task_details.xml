@@ -21,33 +21,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
+<<<<<<< HEAD
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"/>
+=======
+        android:layout_gravity="center_horizontal" />
+>>>>>>> master
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/country_arrays"
+<<<<<<< HEAD
         android:prompt="@string/country_prompt"
         android:layout_margin="10dp"/>
+=======
+        android:prompt="@string/country_prompt" />
+>>>>>>> master
 
     <TimePicker
         android:id="@+id/timePicker1"
         android:layout_width="wrap_content"
+<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
         android:scaleY="0.90"
         android:scaleX="0.90"/>
+=======
+        android:layout_height="wrap_content" />
+>>>>>>> master
 
 
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="Add Task!"
         android:layout_gravity="center"/>
+=======
+        android:text="Submit" />
+>>>>>>> master
 
 
 

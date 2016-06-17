@@ -1,5 +1,6 @@
 <resources>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <string name="app_name">Leaderboard</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
@@ -7,6 +8,22 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="action_search">Search</string>
 
+=======
+    <string name="action_logout">Log Out</string>
+    <string name="app_name">My Tasks</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_item_plus">Add Task page</string>
+    <string name="add_task">Add Tasks</string>
+
+    <string name="country_prompt">Choose a category</string>
+
+    <string-array name="country_arrays">
+        <item>Schoolwork</item>
+        <item>Housework</item>
+        <item>Personal</item>
+        <item>Other</item>
+    </string-array>
+>>>>>>> master
 </resources>
 =======
     <string name="app_name">My Tasks</string>

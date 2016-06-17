@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
 <<<<<<< HEAD
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -25,3 +26,16 @@
         />
 </menu>
 >>>>>>> origin/andrew
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- "Plus Sign", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_plus"
+        android:icon="@drawable/ic_add_black_24dp"
+        android:title="action_plus"
+        android:showAsAction="ifRoom" />
+
+</menu>
+>>>>>>> master

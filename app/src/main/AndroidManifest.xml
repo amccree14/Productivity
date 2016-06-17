@@ -5,6 +5,9 @@
     package="nativeshakers.com.productivity" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name=".Productivity"
@@ -20,8 +23,9 @@
 >>>>>>> origin/andrew
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Productivity"
         android:supportsRtl="true"
+<<<<<<< HEAD
 <<<<<<< HEAD
         android:theme="@style/AppTheme" >
 
@@ -44,12 +48,20 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
 >>>>>>> origin/andrew
+=======
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:name=".Productivity">
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="Productivity Log In" >
+>>>>>>> master
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -64,6 +76,27 @@
         <!--</activity>-->
 
     </application>
+=======
+
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up Activity" >
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".TaskDetails"
+            android:label="@string/add_task"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+
+</application>
+>>>>>>> master
 
 </manifest>
 =======

@@ -13,7 +13,10 @@
 
     <TextView
         android:id="@+id/title"
+<<<<<<< HEAD
         android:textColor="@color/title"
+=======
+>>>>>>> master
         android:textSize="16dp"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
@@ -28,7 +31,10 @@
 
     <TextView
         android:id="@+id/time"
+<<<<<<< HEAD
         android:textColor="@color/time"
+=======
+>>>>>>> master
         android:layout_width="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_height="wrap_content" />
